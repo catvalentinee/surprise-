@@ -11,7 +11,7 @@ body {
   overflow: hidden;
 }
 
-/* SCENES */
+/* SCiENES */
 .scene {
   position: absolute;
   inset: 0;
@@ -320,4 +320,5 @@ button:active {
   100% {
     transform: translate(var(--x-move), var(--y-move)) rotate(720deg);
   }
+
 }
