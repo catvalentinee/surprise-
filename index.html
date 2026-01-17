@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- START -->
+  <div id="start-screen" class="scene">
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <!-- SCENE 1 -->
+  <div id="scene1" class="scene hidden">
+    <img id="character" src="character.png" alt="Character">
+    <div id="dialog-box">
+      Hi Jorge ! It's Lyna, I have a little surprise for you...
+    </div>
+    <button id="next-btn">Next</button>
+  </div>
+<!-- SCENE 2 -->
+<div id="scene2" class="scene hidden">
+
+  <div id="counter">0 / 9</div>
+
+  <div id="shopping-list">
+    <h3>Shopping List</h3>
+    <ul>
+      <li>Milk</li>
+      <li>Flour</li>
+      <li>Sugar</li>
+      <li>Eggs</li>
+      <li>Butter</li>
+      <li>Strawberries</li>
+      <li>Vanilla</li>
+      <li>Baking Powder</li>
+      <li>Whipped Cream</li>
+    </ul>
+  </div>
+
+  <!-- INGREDIENTS -->
+  <img class="ingredient" id="vanilla" src="vanilla.png" draggable="true">
+  <img class="ingredient" id="whippedcream" src="whippedcream.png" draggable="true">
+  <img class="ingredient" id="bakingpowder" src="bakingpowder.png" draggable="true">
+  <img class="ingredient" id="strawberries" src="strawberries.png" draggable="true">
+  <img class="ingredient" id="eggs" src="eggs.png" draggable="true">
+  <img class="ingredient" id="butter" src="butter.png" draggable="true">
+  <img class="ingredient" id="flour" src="flour.png" draggable="true">
+  <img class="ingredient" id="sugar" src="sugar.png" draggable="true">
+  <img class="ingredient" id="milk" src="milk.png" draggable="true">
+
+  <img class="ingredient" id="coffee" src="coffee.png" draggable="true">
+  <img class="ingredient" id="banana" src="banana.png" draggable="true">
+  <img class="ingredient" id="sweetner" src="sweetner.png" draggable="true">
+  <img class="ingredient" id="tea" src="tea.png" draggable="true">
+  <img class="ingredient" id="oliveoil" src="oliveoil.png" draggable="true">
+
+  <!-- BASKET -->
+  <div id="basket">
+    <img src="basket.png" alt="Basket">
+  </div>
+
+  <!-- NEXT BUTTON (must be inside scene2) -->
+  <button id="next2-btn" disabled>Next</button>
+
+</div>
+  <!-- =========================
+     SCENE 3 – CAKE
+========================= -->
+<div id="scene3" class="scene hidden">
+
+  <!-- COUNTER -->
+  <div id="cake-counter">0 / 9</div>
+
+  <!-- BOWL -->
+  <div id="bowl">
+    <img src="bowl.png" alt="Bowl">
+  </div>
+
+  <!-- INGREDIENTS (reuse same images) -->
+  <img class="ingredient cake-ing" id="milk2" src="milk.png">
+  <img class="ingredient cake-ing" id="flour2" src="flour.png">
+  <img class="ingredient cake-ing" id="sugar2" src="sugar.png">
+  <img class="ingredient cake-ing" id="eggs2" src="eggs.png">
+  <img class="ingredient cake-ing" id="butter2" src="butter.png">
+  <img class="ingredient cake-ing" id="strawberries2" src="strawberries.png">
+  <img class="ingredient cake-ing" id="vanilla2" src="vanilla.png">
+  <img class="ingredient cake-ing" id="bakingpowder2" src="bakingpowder.png">
+  <img class="ingredient cake-ing" id="whippedcream2" src="whippedcream.png">
+
+  <!-- LOADING -->
+  <div id="loading" class="hidden">
+    <p>Baking the cake…</p>
+    <div class="bar"></div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="cake-result" class="hidden">
+    <img id="cake" src="cake.png">
+    <img id="envelope" src="enveloppe.png">
+    <div id="confetti-container"></div>
+    <!-- HANDWRITING -->
+  </div>
+
+</div>
+  <script src="game.js"></script>
+</body>
+</html>
